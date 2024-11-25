@@ -1,0 +1,84 @@
+---
+import LayoutDeteccion from "../layouts/servicios-layout.astro"
+---
+
+<!--------------------------------------HTML----------------------------------------------->
+<LayoutDeteccion>
+    <div slot="encabezado">
+        <h2 class="animate__animated animate__fadeInUp text-orange-500 text-base font-bold uppercase mb-2">
+            Diseño y consultoría de proyectos 
+        </h2>
+        <h1 class="animate__animated animate__fadeInUp text-4xl lg:text-6xl font-bold mb-4">
+            Maximiza el Éxito de tu Proyecto con Diseño y Consultoría Especializada
+        </h1>
+        <p class="animate__animated animate__fadeInUp mt-4 text-gray-600 mb-8 text-lg">
+            Proveemos servicios de diseño y consultoría para desarrollar proyectos de infraestructura de alta calidad, adaptados a las necesidades de tu empresa. <br>
+            Nuestros servicios incluyen planificación estratégica, análisis técnico y supervisión, asegurando una implementación eficiente y alineada con tus objetivos. <br>
+        </p>
+        <div class="animate__animated animate__fadeIn mt-12">
+            <img alt="Top view of a workspace with laptops, coffee, and notebooks" class="mx-auto rounded-lg shadow-lg" height="400" src="https://www.shutterstock.com/image-photo/top-view-business-people-meeting-600nw-2468417649.jpg" width="800"/>
+        </div>
+    </div>
+
+    <!--------------------------------------- VIDEOS APLICATIVOS --------------------------------------------->
+
+    <div slot="videos" class="text-center">
+        <video class="video_layout w-full h-auto mb-4" controls>
+            <source src="" type="video/mp4"/>
+        </video>
+        
+        <h2 class="subtitulo_layout text-xl font-semibold">
+            Video 1
+        </h2>
+        <p class="descripcion_layout text-justify">
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Amet tempora repellendus tenetur aliquid, iste repudiandae pariatur eligendi, necessitatibus eum ab non eaque commodi voluptate saepe magnam adipisci, culpa natus. Dignissimos?
+        </p>
+    </div>
+
+    <div slot="videos" class="text-center">
+        <video class="video_layout w-full h-auto mb-4" controls>
+            <source src="" type="video/mp4"/>
+        </video>
+        <h2 class="subtitulo_layout text-xl font-semibold">
+            Video 2
+        </h2>
+        <p class="descripcion_layout text-justify">
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Ratione perferendis debitis commodi placeat cum, maxime, qui facilis tempora atque fuga aspernatur libero animi eligendi veritatis? Architecto soluta assumenda porro. Assumenda.
+        </p>
+    </div>
+
+    <div slot="videos" class="text-center">
+        <video class="video_layout w-full h-auto mb-4" controls>
+            <source src="" type="video/mp4"/>
+        </video>
+        <h2 class="subtitulo_layout text-xl font-semibold">
+            Video 3
+        </h2>
+        <p class="descripcion_layout text-justify">
+            Lorem ipsum, dolor sit amet consectetur adipisicing elit. Ipsum expedita recusandae beatae explicabo voluptatibus repellendus et. Officia, quidem ipsam! Maxime nostrum obcaecati eveniet minus doloribus ut non modi mollitia reprehenderit.
+        </p>
+    </div>
+
+
+    <a slot="navegacion" class="w-auto font-bold text-white bg-orange-400 py-2.5 px-5 rounded-full hover:bg-orange-500 transition duration-400 ease-in-out lg:mr-4" href="/Block_Security/distribucion-audio-video">
+        <i class="ri-arrow-left-line"></i>
+        Distribución de Audio y Video
+    </a> 
+    
+    <a slot="navegacion" class="w-auto font-bold text-white bg-orange-400 py-2.5 px-5 rounded-full hover:bg-orange-500 transition duration-400 ease-in-out lg:mr-4" href="/Block_Security/iot-automatizacion">
+        IoT y Automatización
+        <i class="ri-arrow-right-line"></i>
+    </a> 
+
+</LayoutDeteccion>
+
+<style>
+/************ ESTILOS PARA ANIMACIÓN ***********/
+.video_layout, .subtitulo_layout, .descripcion_layout{
+    opacity: 0;
+}
+
+.video_layout.animate__animated, .subtitulo_layout.animate__animated, .descripcion_layout.animate__animated{
+    opacity: 1;
+}
+</style>

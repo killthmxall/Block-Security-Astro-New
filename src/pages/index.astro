@@ -1,16 +1,138 @@
 ---
-
+import VistaPrincipal from "../pages/main.astro"
+import VistaVideovigilancia from "../pages/videovigilancia.astro"
+import VistaServicios from "../components/servicios.astro"
+import VistaClientes from "../components/clientes.astro"
+import FormContacto from "../components/form-contacto.astro"
+import Footer from "../components/footer.astro"
+import NavMain from "../components/navbar-main.astro"
 ---
 
 <html lang="en">
 	<head>
 		<meta charset="utf-8" />
-		<link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+		<link rel="icon" type="image/svg+xml" href="/public/images/short-logo.png" />
 		<meta name="viewport" content="width=device-width" />
 		<meta name="generator" content={Astro.generator} />
-		<title>Astro</title>
+		<title>Block Security Seguridad S.A</title>
+
+		<!-- TAILWIND -->
+		<link href="https://unpkg.com/tailwindcss@^2/dist/tailwind.min.css" rel="stylesheet">
+
+		<!-- FLOWBITE  -->
+		<link href="https://cdn.jsdelivr.net/npm/flowbite@2.5.2/dist/flowbite.min.css" rel="stylesheet" />
+
+		<!-- ICONS -->
+		<link href="https://cdn.jsdelivr.net/npm/remixicon@4.3.0/fonts/remixicon.css" rel="stylesheet"/>
+
+        <!-- ANIMATE CSS -->
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
+
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	</head>
+
 	<body>
-		<h1>Astro</h1>
+
+        <!------ SCRIPT ANIMACION DE INICIO ------->
+        <div class="intro ">
+            <h1 class="logo-header text-center">
+                <div class="flex items-center justify-center">
+                    <img class="animate__animated animate__flip h-64 w-64 object-contain" src="/public/images/short-logo.png" alt="">
+                </div>
+                <br>
+                <span class="logo text-5xl lg:text-5xl md:text-5xl sm:text-2xl">BLOCK</span>
+                <span class="logo text-5xl lg:text-5xl md:text-5xl sm:text-2xl">SECURITY®</span>
+            </h1>
+        </div>
+        <!----------------------------------------->
+
+		<NavMain client:load/>
+		<VistaPrincipal client:load />
+		<VistaServicios client:load/>
+		<VistaClientes client:load/>
+		<FormContacto client:load/>
+		<Footer client:load>
+
+		<!-- SCRIPT FLOWBITE -->	
+		<script src="https://cdn.jsdelivr.net/npm/flowbite@2.5.2/dist/flowbite.min.js"></script>
+
+		<!-- SCRIPT JQUERY CDN -->	
+        <script src="https://code.jquery.com/jquery-3.7.1.min.js" integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo=" crossorigin="anonymous"></script>
+        
+        <!-- SCRIPT WAYPOINTS CDN -->	
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/waypoints/4.0.1/jquery.waypoints.js" integrity="sha512-ZKNVEa7gi0Dz4Rq9jXcySgcPiK+5f01CqW+ZoKLLKr9VMXuCsw3RjWiv8ZpIOa0hxO79np7Ec8DDWALM0bDOaQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+        
+        <!-- SCRIPT SCROLL -->	
+        <script src="../js/scroll.js"></script>
+
+        <!-- SCRIPT INTRO -->
+		<script src="../js/intro-app.js"></script>
+
 	</body>
 </html>
+
+<style>
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-weight: 300;
+}
+
+header {
+    position: relative;
+    left: 0;
+    top: 0;
+    width: 1005;
+    height: 80px;
+}
+
+header h4 {
+    position: absolute;
+    left: 10%;
+    bottom: 1rem;
+    font-size: 1.6rem;
+}
+
+/* Splash Screen */
+.intro {
+    position: fixed;
+    z-index: 1;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100vh;
+    background-color: rgb(255, 255, 255);
+    transition: 1s;
+}
+
+.logo-header {
+    position: absolute;
+    top: 40%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: rgb(51, 51, 51);
+}
+
+.logo {
+    position: relative;
+    display: inline-block;
+    bottom: -20px;
+    opacity: 0;
+    letter-spacing: 6px;
+    font-weight: 600;
+}
+
+.logo.active {
+    bottom: 0;
+    opacity: 1;
+    transition: ease-in-out 0.5s;
+}
+
+.logo.fade {
+    bottom: 150px;
+    opacity: 0;
+    transition: ease-in-out 0.5s;
+}
+</style>

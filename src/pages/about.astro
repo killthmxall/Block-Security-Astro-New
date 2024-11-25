@@ -1,0 +1,246 @@
+---
+import NavMain from "../components/navbar-main.astro"
+
+import Footer from "../components/footer.astro"
+
+import '@fontsource/outfit/200.css';
+---
+
+<head>
+    <meta charset="utf-8" />
+    <link rel="icon" type="image/svg+xml" href=" /public/images/short-logo.png" />
+    <meta name="viewport" content="width=device-width" />
+    <meta name="generator" content={Astro.generator} />
+    <title>Block Security</title>
+
+    <!-- TAILWIND -->
+    <link href="https://unpkg.com/tailwindcss@^2/dist/tailwind.min.css" rel="stylesheet">
+
+    <!-- FLOWBITE  -->
+    <link href="https://cdn.jsdelivr.net/npm/flowbite@2.5.2/dist/flowbite.min.css" rel="stylesheet" />
+
+    <!-- ICONS -->
+    <link href="https://cdn.jsdelivr.net/npm/remixicon@4.3.0/fonts/remixicon.css" rel="stylesheet"/>
+
+    <!-- CLOUDFLARE -->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" rel="stylesheet"/>
+
+    <!-- ANIMATE CSS -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
+
+</head>
+
+<html>
+    <NavMain />
+
+    <body>
+
+    <main class="container mx-auto px-4 py-16 text-center mt-14 max-w-5xl">
+        <section class="flex items-center space-x-12">
+            <div class="w-1/2 animate__animated animate__fadeInLeft">
+               <img alt="" class="rounded-lg shadow-lg" height="400" src="https://bookworm-light-astro.vercel.app/images/author.png" width="400"/>
+            </div>
+            <div class="w-1/2">
+               <h2 class="animate__animated animate__fadeInUp text-5xl font-bold text-orange-500">
+                  Nuestra
+                  <span class="text-gray-600">
+                  Misión
+                  </span>
+               </h2>
+               <p class="animate__animated animate__fadeInUp mt-4 text-gray-600 text-xl">
+                    Proveer soluciones tecnológicas de excelencia para salvaguardar la seguridad de nuestros clientes y sus empresas. Nos comprometemos a brindar sistemas a precios competitivos acompañados de un servicio personalizado.
+               </p>
+            </div>
+         </section>
+
+         <hr class="animate__animated animate__fadeInUp w-48 h-1 mx-auto my-4 bg-gray-200 border-0 rounded md:my-10 dark:bg-gray-700">
+
+         <section class="flex flex-col items-center justify-center">
+            <div class="acronimo_1">
+                <h2 class="text-6xl font-bold text-orange-500">
+                    C<span class="text-gray-600">omprometidos</span>
+                </h2>
+            </div>
+
+            <br>
+
+            <div class="acronimo_2">
+                <h2 class="text-6xl font-bold text-orange-500 ">
+                    L<span class="text-gray-600">eales</span>
+                </h2>
+            </div>
+
+            <br>
+
+            <div class="acronimo_3">
+                <h2 class="text-6xl font-bold text-orange-500  ">
+                    O<span class="text-gray-600">rganizados</span>
+                </h2>
+            </div>
+
+            <br>
+
+            <div class="acronimo_4">
+                <h2 class="text-6xl font-bold text-orange-500  ">
+                    U<span class="text-gray-600">nidos</span>
+                </h2>
+            </div>
+
+            <br>
+
+            <div class="acronimo_5">
+                <h2 class="text-6xl font-bold text-orange-500 ">
+                    D<span class="text-gray-600">isciplinados</span>
+                </h2>
+            </div>
+
+            <br>
+
+        </section>
+        
+        <hr class="animate__animated animate__fadeInUp w-48 h-1 mx-auto my-4 bg-gray-200 border-0 rounded md:my-10 dark:bg-gray-700">
+
+         <section class="flex items-center space-x-12">
+            <div class="w-1/2">
+               <h2 class="text-5xl font-bold text-orange-500 titulo_vision">
+                  Nuestra
+                  <span class="text-gray-600">
+                  Visión
+                  </span>
+               </h2>
+               <p class="mt-4 text-gray-600 text-xl subtitulo_vision">
+                    Convertir la tecnología en soluciones integradas en la nube, eficientes y fiables, centradas en la excelencia y la mejora continua para establecer relaciones duraderas.               
+                </p>
+            </div>
+
+            <div class="w-1/2 img_vision">
+                <img alt="" class="rounded-lg shadow-lg" height="400" src="https://png.pngtree.com/png-clipart/20240219/original/pngtree-business-vision-concepts-style-illustrations-vector-png-image_14355035.png" width="400"/>
+             </div>
+         </section>
+
+         <hr class="animate__animated animate__fadeInUp w-48 h-1 mx-auto my-4 bg-gray-200 border-0 rounded md:my-10 dark:bg-gray-700">
+
+         <section class="mt-16 text-center">
+            <h2 class="text-4xl font-bold text-orange-500 titulo_equipo">
+               Equipo
+               <span class="text-gray-600">
+               Central
+               </span>
+            </h2>
+            <p class="mt-4 text-gray-600 subtitulo_equipo">
+                Block Security está conformado por estas increíbles personas.
+            </p>
+
+            <section class="py-12">
+                <div class="grid grid-cols-1 md:grid-cols-4 gap-8 ">
+                    <div class="equipo_1 relative">
+                        <img alt="" class="w-full h-52 object-cover rounded-xl" src=""/>
+                    </div>
+        
+                    <div class="equipo_2 relative">
+                        <img alt="" class="w-full h-52 object-cover rounded-xl" src="" />
+                    </div>
+        
+                    <div class="equipo_3 relative">
+                        <img alt="" class="w-full h-52 object-cover rounded-xl" src="" />
+                    </div>
+
+                    <div class="equipo_4 relative">
+                        <img alt="" class="w-full h-52 object-cover rounded-xl" src="" />
+                    </div>
+
+                    <div class="equipo_5 relative">
+                        <img alt="" class="w-full h-52 object-cover rounded-xl" src="" />
+                    </div>
+
+                    <div class="equipo_6 relative">
+                        <img alt="" class="w-full h-52 object-cover rounded-xl" src="" />
+                    </div>
+
+                    <div class="equipo_7 relative">
+                        <img alt="" class="w-full h-52 object-cover rounded-xl" src="" />
+                    </div>
+
+                    <div class="equipo_8 relative">
+                        <img alt="" class="w-full h-52 object-cover rounded-xl" src="" />
+                    </div>
+                </div>
+
+            </section>
+
+         </section>
+
+    </main>
+
+        <!-- SCRIPT JQUERY CDN -->	
+        <script src="https://code.jquery.com/jquery-3.7.1.min.js" integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo=" crossorigin="anonymous"></script>
+        
+        <!-- SCRIPT WAYPOINTS CDN -->	
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/waypoints/4.0.1/jquery.waypoints.js" integrity="sha512-ZKNVEa7gi0Dz4Rq9jXcySgcPiK+5f01CqW+ZoKLLKr9VMXuCsw3RjWiv8ZpIOa0hxO79np7Ec8DDWALM0bDOaQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    
+        <!-- SCRIPT SCROLL -->	
+        <script src="../js/scroll.js"></script>
+
+    </body>
+    
+    <Footer />
+
+</html>
+
+<style>
+
+    body {
+        font-family: 'Outfit', sans-serif;
+    }
+
+    /************ ESTILOS PARA ANIMACIÓN ***********/
+    .titulo_vision,
+    .subtitulo_vision,
+    .acronimo_1,
+    .img_vision,
+    .titulo_equipo,
+    .subtitulo_equipo,
+    .equipo_1,
+    .equipo_2,
+    .equipo_3,
+    .equipo_4,
+    .equipo_5,
+    .equipo_6,
+    .equipo_7,
+    .equipo_8,
+    .acronimo_1,
+    .acronimo_2,
+    .acronimo_3,
+    .acronimo_4,
+    .acronimo_5
+    {
+        opacity: 0;
+    }
+
+    .titulo_vision.animate__animated, 
+    .subtitulo_vision.animate__animated, 
+    .acronimo_1.animate__animated
+    .img_vision.animate__animated,
+    .titulo_equipo.animate__animated,
+    .subtitulo_equipo.animate__animated,
+    .equipo_1.animate__animated,
+    .equipo_2.animate__animated,
+    .equipo_3.animate__animated,
+    .equipo_4.animate__animated,
+    .equipo_5.animate__animated,
+    .equipo_6.animate__animated,
+    .equipo_7.animate__animated,
+    .equipo_8.animate__animated,
+    .acronimo_1.animate__animated,
+    .acronimo_2.animate__animated,
+    .acronimo_3.animate__animated,
+    .acronimo_4.animate__animated,
+    .acronimo_5.animate__animated
+    {
+        opacity: 1;
+    }
+    
+</style>
+    
+
+<script src="https://cdn.jsdelivr.net/npm/flowbite@2.5.2/dist/flowbite.min.js"></script>

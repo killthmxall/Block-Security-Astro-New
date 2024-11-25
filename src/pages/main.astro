@@ -1,0 +1,121 @@
+---
+import '@fontsource/outfit/200.css';
+---
+
+<!--------------------------------------HTML----------------------------------------------->
+<html>
+
+<head>
+    <title>
+        Block Security Seguridad S.A
+    </title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" rel="stylesheet" />
+</head>
+
+<body class="bg-white">
+
+    <!-- Header -->
+    <header class="text-center py-8">
+        <img alt="" class="mx-auto" height="100" src=" /public/images/logo.png" width="300px" />
+    </header>
+
+<!------------------------------------------------------ IMAGEN PROMOCIONALDEL SITIO ------------------------------------------------------>
+    <main>
+        <!-- Hero Section -->
+        <section class="relative">
+            <div class="bg-gradient-to-b from-white-400 to-white-400">
+
+            <div class="w-full h-96 object-cover" ></div>
+            </div>
+            <!--img alt="" class="w-full h-96 object-cover" height="600" src=" /public/images/motivo-block-white.png" width="1920" /-->
+            <div class="absolute inset-0 flex items-center justify-center text-center text-gray-800">
+                <div>
+                    <h2 class="titulo animate__animated animate__fadeInUp text-gray-600 text-3xl lg:text-5xl md:text-3xl sm:text-2xl font-bold">
+                        Proveemos soluciones personalizadas <br>
+                        en seguridad e infraestructura
+                    </h2>
+                    <p class="animate__animated animate__fadeInUp subtitulo mt-4 text-pretty lg:text-2xl font-medium">
+                        Integrando tecnología en la nube de manera eficiente
+                        y confiable para proteger los activos y <br>
+                        personas de corporaciones, asegurando 
+                        así relaciones duraderas.
+                    </p>
+                </div>
+            </div>
+
+            <!--
+            <div class="absolute inset-y-0 left-0 flex items-center">
+                <button class="text-white text-2xl px-4">
+                    <i class="fas fa-chevron-left"></i>
+                </button>
+            </div>
+
+            <div class="absolute inset-y-0 right-0 flex items-center">
+                <button class="text-white text-2xl px-4">
+                    <i class="fas fa-chevron-right"></i>
+                </button>
+            </div>
+            -->
+
+        </section>
+    </main>
+</body>
+</html>
+
+<!--------------------------------------ESTILOS CSS----------------------------------------------->
+<style>
+
+body {
+  font-family: 'Outfit', sans-serif;
+}
+
+/************ IMAGENES PROMOCIONALES DEL SITIO ***********/
+.imagen{
+    width: 100%;
+    height: 400px;
+    object-fit: cover;
+}
+
+.titulo{
+    line-height: 1.2;
+}
+
+/************ NUESTROS SERVICIOS ************/
+
+@media (min-width: 100%) {
+    .container2{
+        max-width: 100%;
+    }
+}
+
+.divider {
+    margin: 5rem 0;
+}
+
+.contenedor{
+    position: relative;
+    text-align: center;
+}
+
+.imagenFondo{
+    width: 100%;
+    object-fit: cover;
+    filter: brightness(0.6);  /* 60% de brillo */
+    height: 493px; 
+    padding-bottom: 60px;
+}
+
+.botonServicio{
+    position: absolute;
+    top: 60%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-size: 16px;
+    color: white;
+    background-color: #f47d1f;
+    padding: 18px;
+    font-weight: bold;
+}
+
+</style>

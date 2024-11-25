@@ -1,0 +1,118 @@
+---
+import LayoutDistribucion from "../layouts/servicios-layout.astro"
+---
+
+<!--------------------------------------HTML----------------------------------------------->
+<LayoutDistribucion>
+    <div slot="encabezado">
+        <h2 class="animate__animated animate__fadeInUp text-orange-500 text-base font-bold uppercase mb-2">
+            Distribución de audio y video
+        </h2>
+        <h1 class="animate__animated animate__fadeInUp text-4xl lg:text-6xl font-bold mb-4">
+            Transforma tus Espacios con Soluciones de Distribución Audiovisual de Alta Calidad
+        </h1>
+        <p class="animate__animated animate__fadeInUp mt-4 text-gray-600 mb-8 text-lg">
+            Ofrecemos soluciones integrales para la distribución de audio y video, ideales para salas de conferencias, auditorios y más. <br>
+            Con equipos avanzados y configuraciones personalizadas, garantizamos una experiencia audiovisual de alta calidad. <br>
+        </p>
+        <div class="animate__animated animate__fadeIn mt-12">
+            <img alt="Top view of a workspace with laptops, coffee, and notebooks" class="mx-auto rounded-lg shadow-lg" height="400" src="https://argos.red/wp-content/uploads/2023/05/banner-videovigilancia-1920-1024x267-1.jpg" width="800"/>
+        </div>
+    </div>
+
+    <!--------------------------------------- VIDEOS APLICATIVOS --------------------------------------------->
+    <div slot="videos" class="text-center">
+        <button data-modal-target="default-modal1" data-modal-toggle="default-modal1" class="w-20 h-20 border-8 rounded-full text-center border-orange-400 hover:border-orange-500 transition duration-400 ease-in-out lg:mr-4 " type="button">
+            <i class="fa fa-play fa-2x"></i>
+        </button>
+        <h2 class="subtitulo_layout text-xl font-semibold">
+            Crown | DCi Family
+        </h2>
+        <p class="descripcion_layout text-justify">
+            La serie de instalación Crown DriveCore DCi está diseñada para ofrecer soluciones avanzadas de audio con cuatro líneas especializadas. <br>
+            Es ideal para instalaciones que no requieren audio en red. Estas opciones garantizan flexibilidad y rendimiento superior en aplicaciones profesionales de audio. <br>
+        </p>
+        <!-- Main modal -->
+        <div id="default-modal1" tabindex="-1" aria-hidden="true" class="hidden overflow-y-auto overflow-x-hidden fixed top-0 right-0 left-0 z-50 justify-center items-center w-full md:inset-0 h-[calc(100%-1rem)] max-h-full">
+            <div class="relative p-4 w-full max-w-5xl max-h-full">
+                <!-- Modal content -->
+                <div class="relative">
+                    <video class="video_layout w-full h-auto mb-4 rounded-3xl" controls>
+                        <source src="https://res.cloudinary.com/df5olfhrq/video/upload/v1732293005/Crown%20%7C%20DCi%20Family.mp4" type="video/mp4"/>
+                    </video>
+                </div>
+                
+            </div>
+        </div>
+    </div>
+
+    <div slot="videos" class="text-center">
+        <button data-modal-target="default-modal2" data-modal-toggle="default-modal2" class="w-20 h-20 border-8 rounded-full text-center border-orange-400 hover:border-orange-500 transition duration-400 ease-in-out lg:mr-4 " type="button">
+            <i class="fa fa-play fa-2x"></i>
+        </button>
+        <h2 class="subtitulo_layout text-xl font-semibold">
+            IP Audio System
+        </h2>
+        <p class="descripcion_layout text-justify">
+            Este sistema es ideal para aplicaciones en edificios corporativos, centros comerciales, y otros entornos grandes donde se requiere la distribución de audio de alta calidad y control centralizado.
+        </p>
+        <!-- Main modal -->
+        <div id="default-modal2" tabindex="-1" aria-hidden="true" class="hidden overflow-y-auto overflow-x-hidden fixed top-0 right-0 left-0 z-50 justify-center items-center w-full md:inset-0 h-[calc(100%-1rem)] max-h-full">
+            <div class="relative p-4 w-full max-w-5xl max-h-full">
+                <!-- Modal content -->
+                <div class="relative">
+                    <video class="video_layout w-full h-auto mb-4 rounded-3xl" controls>
+                        <source src="https://res.cloudinary.com/df5olfhrq/video/upload/v1731087719/IP%20Audio%20System.mp4" type="video/mp4"/>
+                    </video>
+                </div>
+                
+            </div>
+        </div>
+    </div>
+
+    <div slot="videos" class="text-center">
+        <button data-modal-target="default-modal3" data-modal-toggle="default-modal3" class="w-20 h-20 border-8 rounded-full text-center border-orange-400 hover:border-orange-500 transition duration-400 ease-in-out lg:mr-4 " type="button">
+            <i class="fa fa-play fa-2x"></i>
+        </button>
+        <h2 class="subtitulo_layout text-xl font-semibold">
+            Audio IP Hanwha
+        </h2>
+        <p class="descripcion_layout text-justify">
+            Este sistema permite la transmisión de audio a través de redes IP, se destacan características como la flexibilidad, la escalabilidad y la calidad del audio, lo que hace que sea una solución ideal para diversos entornos.
+        </p>
+        <!-- Main modal -->
+        <div id="default-modal3" tabindex="-1" aria-hidden="true" class="hidden overflow-y-auto overflow-x-hidden fixed top-0 right-0 left-0 z-50 justify-center items-center w-full md:inset-0 h-[calc(100%-1rem)] max-h-full">
+            <div class="relative p-4 w-full max-w-5xl max-h-full">
+                <!-- Modal content -->
+                <div class="relative">
+                    <video class="video_layout w-full h-auto mb-4 rounded-3xl" controls>
+                        <source src=" https://res.cloudinary.com/df5olfhrq/video/upload/v1731087818/Hanwha%20Vision%20-%20IP%20Audio%20System.mp4 " type="video/mp4"/>
+                    </video>
+                </div>
+                
+            </div>
+        </div>
+    </div>
+
+    <a slot="navegacion" class="w-auto font-bold text-white bg-orange-400 py-2.5 px-5 rounded-full hover:bg-orange-500 transition duration-400 ease-in-out lg:mr-4" href="/Block_Security/deteccion-incendio">
+        <i class="ri-arrow-left-line"></i>
+        Detección de incendios
+    </a> 
+    
+    <a slot="navegacion" class="w-auto font-bold text-white bg-orange-400 py-2.5 px-5 rounded-full hover:bg-orange-500 transition duration-400 ease-in-out lg:mr-4" href="/Block_Security/diseno-consultoria">
+        Diseño y consultoria
+        <i class="ri-arrow-right-line"></i>
+    </a> 
+
+</LayoutDistribucion>
+
+<style>
+    /************ ESTILOS PARA ANIMACIÓN ***********/
+    .video_layout, .subtitulo_layout, .descripcion_layout{
+        opacity: 0;
+    }
+    
+    .video_layout.animate__animated, .subtitulo_layout.animate__animated, .descripcion_layout.animate__animated{
+        opacity: 1;
+    }
+</style>
